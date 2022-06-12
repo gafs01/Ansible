@@ -12,7 +12,7 @@
      enabled: yes
    - name: open firewall
      firewalld:
-       service: vsftp
+       service: ftp
        state: enabled
        permanent: yes
        immediate: yes
