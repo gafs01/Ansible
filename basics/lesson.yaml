@@ -1,5 +1,6 @@
 ---
 - name: install and run vsftpd
+  gather_facts: no
   hosts: rocky
   tasks:
   - name: install the package
