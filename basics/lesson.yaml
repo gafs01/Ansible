@@ -1,0 +1,17 @@
+---
+- name: install and run vsftpd
+  hosts: rocky
+  tasks:
+  - name: install the package
+    package:
+       name: vsftpd
+   - name: run the service
+     name: vsftp
+     state: started
+     enabled: yes
+   - name: open firewall
+     firewalld:
+       service: vsftp
+       state: enabled
+       permanent: yes
+       immediate: yes
