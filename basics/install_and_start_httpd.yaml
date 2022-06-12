@@ -1,6 +1,6 @@
 ---
 - name: install start and enable httpd
-  hosts: all
+  hosts: rocky
   tasks:
   - name: install package
     package:
@@ -11,3 +11,19 @@
       name: httpd
       state: started
       enabled: yes
+  . name: open port in firewall
+    firewalld:
+    service: http
+    permanent: yes
+    state: enabled
+    immediate: yes
+    
+ - name: test httpd accessibility
+   become: false
+   gather_facts: no
+   hosts: localhosts
+   tasks:
+   - name: test httpd access
+     uri:
+        url: http://ansible2
+    
