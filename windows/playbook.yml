@@ -4,8 +4,8 @@
   tasks: 
     - name: create windows users
       win_user:
-        name: linda
-        password: "@nsible123"
+        name: fayo
+        password: "Passw0rd!"
         state: present
         groups: 
           - Users
