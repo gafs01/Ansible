@@ -1,6 +1,9 @@
 ansubuntu
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0808e53647d2cd927cb1a246cae686131180a5b
 [rocky]
 ansible2
 ansible3
