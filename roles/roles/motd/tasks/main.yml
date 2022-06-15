@@ -3,7 +3,7 @@
 - name: copy motd file
   template:
     src: templates/motd.j2
-    dest: /etc/motd
+    dest: /etc/newmotd
     owner: root
     group: root
     mode: 0444
