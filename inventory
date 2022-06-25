@@ -1,5 +1,6 @@
-#ansubuntu
+[ubuntu]
+ansubuntu
 
 [rocky]
 ansible2
-#ansible3
+ansible3
