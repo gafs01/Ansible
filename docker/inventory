@@ -1,11 +1,11 @@
-[rhfamily]
-centos7
-rhel84
-tower
+#[rhfamily]
+#centos7
+#rhel84
+#tower
 
 [nonrhfamily]
-ubuntu
+ansubuntu
 
-[servers:children]
-nonrhfamily
-rhfamily
+[rocky]
+ansible2
+ansible3

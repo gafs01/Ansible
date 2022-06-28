@@ -1,6 +1,6 @@
 [win]
 answin.gaf.local
-192.168.157.247
+192.168.157.132
 
 [win:vars]
 ansible_user=ansible

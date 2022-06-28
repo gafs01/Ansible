@@ -1,0 +1,16 @@
+all:
+  children:
+    file:
+      hosts:
+        ansible2.gaf.local: {}
+  lamp:
+    hosts:
+       ansible3.gaf.local: {}
+  ungrouped: {}
+  win:
+    hosts:
+      answin.gaf.local:
+        ansible_connection: winrm
+        ansible_password: 'Passw0rd!'
+        ansible_user: ansible
+        ansible_winrm_server_cert_validation: ignore

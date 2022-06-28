@@ -4,7 +4,7 @@ import redis
 import json
 
 r = redis.StrictRedis(host='localhost', port=6379, db=0)
-key = 'ansible_facts' + 'kubuntu'
+key = 'ansible_facts' + 'ansible2'
 val = r.get(key)
 
 data = json.loads(val)

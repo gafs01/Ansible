@@ -4,6 +4,11 @@
   become: true
   gather_facts: false
   tasks:
+  - name: install software
+    package:
+      name:
+      - httpd
+      - sync-daemon
   - name: update web document root
     synchronize:
       src: webfiles/

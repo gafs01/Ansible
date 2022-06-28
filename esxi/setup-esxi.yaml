@@ -3,10 +3,10 @@
   collections:
   - community.vmware
   vars:
-  - esxi_hostname: 192.168.29.178
-  - vcenter_hostname: 192.168.29.178
+  - esxi_hostname: 192.168.157.154
+  - vcenter_hostname: 192.168.157.131
   - vcenter_username: root
-  - vcenter_password: P@ssw0rd!
+  - vcenter_password: Passw0rd!
   hosts: esxi
   tasks:
   - vmware_guest:
@@ -23,10 +23,10 @@
       disk:
       - size_gb: 10
         type: thin
-        datastore: datastore1
+        datastore: Data-store
       hardware:
         memory_mb: 512
-        num_cpus: 4
+        num_cpus: 1
         scsi: paravirtual
       networks:
       - name: VM Network
@@ -38,4 +38,5 @@
       wait_for_ip_address_timeout: 600
     delegate_to: localhost
     register: deploy_vm
-
+  - debug:
+      var: deploy_vm

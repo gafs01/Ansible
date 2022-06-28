@@ -1,12 +1,14 @@
+
+
 - name: copy files between hosts
-  hosts: rocky
+  hosts: ansible2
   tasks:
-  - name: copy file from ubuntu to rocky
-    synchronize:
+  - name: copy file from ansubuntu to rocky
+    copy:
       src: /etc/hosts
       dest: /tmp/hosts
-      mode: push
-    delegate_to: ubuntu
+      mode: "0644"
+    delegate_to: ansible3
   - name: check file
     stat:
       path: /tmp/hosts
