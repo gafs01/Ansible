@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ansubuntu
 answin
+=======
+[ubuntu]
+ansubuntu
+>>>>>>> 0b2c934bf9fa9fe7c0909523f4deb780dd20e873
 
 [rocky]
 ansible2
