@@ -1,9 +1,9 @@
 ---
 - hosts: rocky
-become: yes
-tasks:
-   - name: Ensure NTP is installed.
-     yum: name=chrony state=present
-   - name: Ensure NTP is running.
-     service: name=chronyd state=started enabled=yes
-     
+  become: true
+  tasks:
+    - name: Ensure NTP is installed
+      yum: name=chrony state=present
+    - name: Ensure NTP is running
+      service: name=chronyd state=started enabled=yes
+
