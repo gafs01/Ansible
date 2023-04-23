@@ -5,18 +5,18 @@
   - name: install package
     package:
       name: httpd
-      state: latest
-  - name: start and enable service
-    service:
-      name: httpd
-      state: started
-      enabled: yes
-  - name: open port in firewall
-    firewalld:
-      service: http
-      permanent: yes
-      state: enabled
-      immediate: yes
+      state: absent
+#  - name: start and enable service
+ #   service:
+  #    name: httpd
+   #   state: started
+    #  enabled: yes
+  #- name: open port in firewall
+    #firewalld:
+     # service: http
+      #permanent: yes
+      #state: enabled
+      #immediate: yes
     
 # - name: test httpd accessibility
  #  become: false
