@@ -7,7 +7,7 @@
     name: httpd
     state: latest
 - name: start and enable service
-   service:
-      name: httpd
-      state: started
-      enabled: yes
+  service:
+     name: httpd
+     state: started
+     enabled: yes

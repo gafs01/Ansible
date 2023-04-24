@@ -1,0 +1,29 @@
+---
+- hosts: ansubuntu
+  become: true
+# tasks:
+ # - name: update repository index
+  #  apt: 
+   #   update_cache: yes    
+      
+  - name: install apache httpd
+    ansible.builtin.apt:
+      name: apache2
+      state: present
+  - name: apt-get update
+    ansible.builtin.apt:
+      update_cache: yes
+      cache_valid_time: yes
+
+#  - name: add php support for apache
+ #   apt:
+  #    name: libapache2-mod-php
+   #   state: latest
+   # copy:
+    #   content: "this is ansible playbook"
+     #  dest: /var/www/html/index.html
+#  - name: restart apache2
+ #   service:
+  #  name: apache2
+   # state: restarted
+   #become: yes        

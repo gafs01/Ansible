@@ -1,0 +1,8 @@
+---
+- hosts: ansubuntu
+  become: true
+  tasks:
+    - name: install apache httpd
+      ansible.builtin.apt:
+        name: apache2 
+        state: present    

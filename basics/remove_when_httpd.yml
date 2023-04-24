@@ -1,0 +1,25 @@
+## The packege will be installed according to the OS version
+
+---
+- name: install start and enable httpd
+  hosts: all
+  tasks:
+  - name: install package
+    package:
+      name: httpd
+      state: absent
+    when: ansible_distribution == "Centos"
+
+  - name: install apache2
+    apt: name=apache2 update_cache=yes state=absent
+    when: ansible_distribution == "Ubuntu"
+
+# - name: test httpd accessibility
+ #  become: false
+  # gather_facts: no
+   #hosts: localhosts
+  # tasks:
+  # - name: test httpd access
+   #  uri:
+    #    url: http://ansible2
+    
