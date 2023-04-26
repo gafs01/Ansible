@@ -1,0 +1,11 @@
+## Show or display the present os family
+- name: Simple Play
+  hosts: all
+  connection: local
+  tasks:
+    - name: ping me
+      ping:
+
+    - name: display os
+      debug:
+        msg: "{{ ansible_os_family}}"

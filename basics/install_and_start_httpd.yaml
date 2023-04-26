@@ -22,11 +22,18 @@
       state: enabled
       immediate: yes
     when: ansible_distribution == "Centos"
+  
+  - name: install tree
+    yum: name=tree state=present
+    when: ansible_distribution == "Centos"
 
   - name: install apache2
-    apt: name=apache2 update_cache=yes state=present
+    apt: name=apache2 state=present
     when: ansible_distribution == "Ubuntu"
-
+  
+  - name: install tree
+    apt: name=tree state=present
+    when: ansible_distribution == "Ubuntu"
 # - name: test httpd accessibility
  #  become: false
   # gather_facts: no
@@ -36,3 +43,4 @@
    #  uri:
     #    url: http://ansible2
     
+
