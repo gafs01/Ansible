@@ -1,0 +1,22 @@
+# Add comment_visibility, group and value
+---
+- name: Integrate Ansible with Jira
+  hosts: localhost
+  vars_files:
+    - secrets.yaml
+    - comments.yaml
+  vars:
+    jirauri: "https://gfstest.atlassian.net/"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{jirauri}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: PA
+        operation: comment
+        comment: '{{comment}}'  # assign the variable
+        comment_visibility:
+          type: group      # add group
+          value: managers  # add group name
+        issue: PA-7

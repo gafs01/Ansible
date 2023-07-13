@@ -1,0 +1,23 @@
+# by using JQL for search querries wirtten as a nmae-value pairs
+---
+- name: Integrate Ansible with Jira
+  hosts: localhost
+  vars_files:
+    - secrets.yaml
+  vars:
+    jirauri: "https://gfstest.atlassian.net/"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{jirauri}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: PA
+        operation: search
+        jql: project=PA AND assignee is EMPTY  # jql is used to identify the search
+        issuetype: Task
+      args:
+        fields:
+          summary: null # Display only the summary field in the search result
+          created: null # to create a time stamp
+        

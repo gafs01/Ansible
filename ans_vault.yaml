@@ -1,0 +1,16 @@
+---
+- name Integrate Ansible with Jira
+  hosts: anscontrol
+  vars_files:
+    - secrets.yaml
+  vars:
+    gafsad: "https://gafsad.atlassian.net"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{gafsad}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: NI
+        operation: create
+        summary: Ansible Jira

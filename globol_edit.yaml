@@ -1,0 +1,19 @@
+# user account_id need to be provided
+---
+- name: Integrate Ansible with Jira
+  hosts: localhost
+  vars_files:
+    - secrets.yaml
+  vars:
+    jirauri: "https://gfstest.atlassian.net/"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{jirauri}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: PA
+        operation: edit
+        issue: PA-4
+        account_id: 712020:8ded2883-bc43-4359-a2de-41ed152f05f8
+        issuetype: Task

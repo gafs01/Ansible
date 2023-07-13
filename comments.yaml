@@ -1,0 +1,4 @@
+# To pass a comment via ansible
+---
+
+comment: This comment is for managers only.

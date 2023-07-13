@@ -1,0 +1,48 @@
+# All the tasks are put into blocks via yaml in managing users with when  variables
+#
+- name: 'Manage Local Account'
+  hosts: 'anscontrol'
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Manage User Account'
+      user: 
+        name: 'ansible'
+        state: 'present'
+        generate_ssh_key: true
+        ssh_key_type: 'ecdsa'
+        ssh_key_file: '.ssh/id_ecdsa'
+
+- name: 'Create and Manage Remote Ansible User'
+  hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Create a User Account, SSH Auth and Sudoers Entry'
+      block:
+        - name: 'Create Ansible User'
+          user:
+            name: 'ansible'
+            state: 'present'
+            shell: '/bin/bash'
+            password: " {{ 'Passw0rd!' | password_hash('sha512') }}"
+            update_password: 'on_create'
+
+    - name: 'Allow SSH Authentication via key ansible account to new Remote Account'
+      authorized_key:
+        user: 'ansible'
+        state: 'present'
+        manage_dir: true
+        key: "{{ lookup('file','/home/ansible/.ssh/id_rsa.pub') }}"
+    - name: 'Copy Sudoers file'
+      copy:
+        dest: '/etc/sudoers.d/ansible'
+        content: 'ansible ALL=(root) NOPASSWD: ALL'
+      when: user_create == 'yes'
+      
+    - name: 'Delete User Account'
+      user:
+        name: 'ansible'
+        state: 'absent'
+        remove: true
+      when: user_create == 'no'  

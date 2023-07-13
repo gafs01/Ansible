@@ -1,0 +1,19 @@
+# defined the comment text from ansible and it can be used to restrict the devops from changing the comment each time in issue
+---
+- name: Integrate Ansible with Jira
+  hosts: localhost
+  vars_files:
+    - secrets.yaml
+    - comments.yaml
+  vars:
+    jirauri: "https://gfstest.atlassian.net/"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{jirauri}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: PA
+        operation: comment
+        comment: '{{comment}}'  # assign the variable
+        issue: PA-7

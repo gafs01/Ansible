@@ -1,0 +1,18 @@
+# defined the comment text from ansible
+---
+- name: Integrate Ansible with Jira
+  hosts: localhost
+  vars_files:
+    - secrets.yaml
+  vars:
+    jirauri: "https://gfstest.atlassian.net/"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{jirauri}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: PA
+        operation: comment
+        comment: This is my test comment
+        issue: PA-7

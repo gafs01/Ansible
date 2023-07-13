@@ -1,0 +1,6 @@
+- name: install apache on ubuntu
+  hosts: ansubuntu
+  become: true
+  tasks:
+    - name: Install latest version of Apache
+      apt: name=apache2 state=present

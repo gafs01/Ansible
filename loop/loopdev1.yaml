@@ -1,0 +1,9 @@
+- name: 'Manage Disk File'
+  hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+   - name: 'Create raw disk file'
+     command:
+        cmd: 'fallocate -l 1G /root/disk0'
+        creates: "/root/disk0"

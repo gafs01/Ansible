@@ -1,8 +1,9 @@
+---
 - name: install start and enable httpd
   hosts: all
   tasks:
   - name: install package
-      package:
+    package:
       name: httpd
       state: latest
   - name: start and enable service
@@ -16,11 +17,11 @@
       permanent: yes
       state: enabled
       immediate: yes
-  - name: install apache httpd
-    ansible.builtin.apt:
+  - name: Ansible apt install apache2
+    apt:
       name: apache2
       state: present
-    when: ansible_distribution == "Ubuntu"
+    when: "'{{ ansible_distribution }}'"a == "Ubuntu"
 # - name: test httpd accessibility
  #  become: false
   # gather_facts: no

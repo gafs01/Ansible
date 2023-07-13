@@ -1,0 +1,4 @@
+apache_pkg: apache2
+apache_svc: apache2
+chrony_svc: chrony
+chrony_conf: /etc/chrony/chrony.conf

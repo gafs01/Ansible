@@ -1,0 +1,20 @@
+# to assign a user to an issue pls use account_id
+---
+- name: Integrate Ansible with Jira
+  hosts: localhost
+  vars_files:
+    - secrets.yaml
+  vars:
+    jirauri: "https://gfstest.atlassian.net"
+  tasks:
+    - name: Create a Jira issue
+      community.general.jira:
+        uri: '{{jirauri}}'
+        username: '{{username}}'
+        password: '{{password}}'
+        project: PA
+        operation: create
+        issuetype: Task
+        account_id: 712020:8ded2883-bc43-4359-a2de-41ed152f05f8
+        summary: Ansible Integration Issue
+        description: Next Issue to be created from ansible

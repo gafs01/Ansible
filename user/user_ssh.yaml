@@ -1,0 +1,12 @@
+- name: 'manage Local User Account' #use to create user´s ssh key pairs
+  hosts: rocky
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Manage User'
+      user: 
+        name: " {{ user_account }}"
+        state: 'present'
+        generate_ssh_key: true
+        ssh_key_file: '.ssh/id_ecdsa'
+        ssh_key_type: 'ecdsa'

@@ -1,0 +1,22 @@
+- name: 'Manage Apache Deployment'
+  hosts: rocky
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Install Apache Web Server'
+      package:
+         name: 'httpd'
+         state: 'present'
+
+    - name: 'Ensure web server is running and enabled'
+      service:
+        name: 'httpd'
+        state: 'started'
+        enabled: true
+
+    - name: 'Copy web content Add Welcome page'
+      copy:
+        dest: '/var/www/html/index.html'
+        state: 'file'
+        content: 'Welcome to the gaf web site'
+

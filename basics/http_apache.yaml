@@ -1,26 +1,32 @@
+## This is when conditional where the application will be installed according to OS Version and
+## when the requirement are met
+---
 - name: install start and enable httpd
   hosts: all
   tasks:
   - name: install package
-      package:
+    package:
       name: httpd
-      state: latest
+      state: present
+    when: ansible_distribution == "Centos"
   - name: start and enable service
     service:
       name: httpd
       state: started
       enabled: yes
+    when: ansible_distribution == "Centos"
   - name: open port in firewall
     firewalld:
       service: http
       permanent: yes
       state: enabled
       immediate: yes
-  - name: install apache httpd
-    ansible.builtin.apt:
-      name: apache2
-      state: present
+    when: ansible_distribution == "Centos"
+
+  - name: install apache2
+    apt: name=apache2 state=present
     when: ansible_distribution == "Ubuntu"
+
 # - name: test httpd accessibility
  #  become: false
   # gather_facts: no
@@ -30,3 +36,4 @@
    #  uri:
     #    url: http://ansible2
     
+
