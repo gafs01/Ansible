@@ -1,10 +1,46 @@
-[win]
-answin.gaf.local
-192.168.157.132
+[winserver]
+#answin10
+answin
+answn
+answin02
+#192.168.157.132
+#192.168.157.130
+#192.168.157.133
+
+[windesk]
+answin10
+
+[dbservers]
+#answn.gaf.local
+answin
+
+# nested group
+[win:children]
+winserver
+windesk
 
 [win:vars]
 ansible_user=ansible
 ansible_password=Passw0rd!
 ansible_connection=winrm
+ansible_winrm_scheme=http
+ansible_winrm_scheme=https
+#ansible_port:5986
+#ansible_winrm_transport:credssp or basic
 ansible_winrm_transport=basic
 ansible_winrm_server_cert_validation=ignore
+ansible_winrm_operation_timeout_sec=120
+ansible_winrm_read_timeout_sec=140
+
+# Linux group in windows
+[linux_srv]
+ansible2
+ansible3
+[linux_servers:children]
+linux_srv
+
+[linux_servers:vars]
+ansible_user=ansible
+ansible_password=Passw0rd!
+ansible_connection=ssh
+ansible_private_key_file=/home/ansible/.ssh/id_rsa

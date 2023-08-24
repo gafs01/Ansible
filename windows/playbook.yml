@@ -6,6 +6,6 @@
       win_user:
         name: fayo
         password: "Passw0rd!"
-        state: present
+        state: absent
         groups: 
           - Users

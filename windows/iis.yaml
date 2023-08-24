@@ -1,0 +1,12 @@
+---
+- name: Install IIS Web-Server
+  hosts: all
+  gather_facts: true
+  tasks:
+    - win_feature:
+        name: Web-Server
+        state: present
+        restart: yes
+        #include_sub_features: yes
+        include_management_tools: yes
+      #register: win_feature

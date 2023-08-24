@@ -1,0 +1,39 @@
+---
+- hosts: winserver
+  vars:
+    gafs_site_path: "c:\\inetpub\\wwwroot\\gafsite"
+    default_index_file: "index.html"
+
+  tasks:
+  - name: Ensure that IIS is installed
+    win_feature:
+      name: "web-Server"
+      state: present
+      restart: no
+      include_sub_features: no
+      include_management_tools: no
+  - name: Ensure gaf website directory is created
+    win_file:
+      path: "{{ gafs_site_path }}"
+      state: directory
+
+  - name: Create sub iis website
+    win_iis_website:
+      name: "gaf Application"
+      state: started
+      port: 8080
+      physical_path: "{{gafs_site_path}}"
+  - name: Copy default index file to site
+    win_copy:
+      src: "{{ default_index_file }}"
+      dest: "{{ gafs_site_path }}\\index.html"
+
+  - name: Ensure firewall rule is in place for the site
+    win_firewall_rule:
+      name: Gaf
+      enabled: yes
+      state: present
+      localport: 8080
+      action: allow
+      direction: in
+      protocol: tcp

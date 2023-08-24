@@ -1,0 +1,16 @@
+---
+- name: Install multiple packages
+  hosts: winserver
+  become: false
+  gather_facts: false
+  vars:
+    - packages:
+      #- sql-server-express
+      - git
+      - notepadplusplus
+  tasks:
+    - name: install packages
+      win_chocolatey:
+       name: "{{ packages }}"
+       state: present
+    

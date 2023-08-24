@@ -10,6 +10,7 @@ all:
   win:
     hosts:
       answin.gaf.local:
+      answin10.gaf.local:
         ansible_connection: winrm
         ansible_password: 'Passw0rd!'
         ansible_user: ansible

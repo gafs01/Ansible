@@ -1,3 +1,4 @@
+# All the create task will be included in the task
 - name: vdo
   hosts: rocky
   become: true

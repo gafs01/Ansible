@@ -1,0 +1,18 @@
+---
+- name: Install Windows Updates
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Install all security updates 
+      win_updates:
+        category_names:
+        - SecurityUpdates
+        reboot: yes
+        reboot_timeout: 3600
+
+
+#- name: Install all security updates with automatic reboots
+#  ansible.windows.win_updates:
+ #   category_names:
+  #  - SecurityUpdates
+   # reboot: true        

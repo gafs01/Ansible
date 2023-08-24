@@ -1,0 +1,26 @@
+# install multiple packages
+---
+- name: Win_chocolatey module demos
+  hosts: winserver
+  become: false
+  gather_facts: false
+ # - name: Install multiple packages sequentially
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+  loop:
+  #- git
+  #- putty
+  #- notepadplusplus
+   - google chrome
+  
+ # vars:
+   # - packages:
+    #  - git
+     # - notepadplusplus
+ # tasks:
+  #  - name: install packages
+   #   chocolatey.chocolatey.Win_chocolatey:
+    #    name: "{{ packages }}" 
+     #   state: present
+

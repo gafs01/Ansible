@@ -1,6 +1,6 @@
 ---
-- hosts: ansubuntu
+- hosts: ubuntu
   become: yes
   tasks:
     - name: install apache2
-      apt: name=apache2 update_cache=yes state=absent      
+      apt: name=apache2 state=present      

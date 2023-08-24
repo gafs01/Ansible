@@ -1,0 +1,7 @@
+# for group rocky
+
+#apache_pkg: httpd
+#apache_srv: httpd
+
+chrony_conf: /etc/chrony.conf
+chrony_svc: chronyd

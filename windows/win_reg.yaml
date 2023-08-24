@@ -1,0 +1,15 @@
+# To check the Net Framework Version on window system via registry
+---
+- name: win_reg_stat module 
+  hosts: winserver
+  tasks: 
+    - name: check .NET version
+      ansible.windows.win_reg_stat:
+        path: 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full'
+        name: "Version"
+      register: reg_val
+
+    - name: print .NET version
+      ansible.builtin.debug:
+        msg: "{{ reg_val }}"
+

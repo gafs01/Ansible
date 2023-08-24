@@ -1,0 +1,274 @@
+
+Found 269 roles matching your search:
+
+ Name                                                Description
+ ----                                                -----------
+ 5003.mariadb                                        SQL Server relational database engine by using a MariaDB
+ 5KYDEV0P5.skydevops-mysql                           Install and configure MySQL Database
+ abednarik.mysqld-exporter                           Install and configure mysqld_exporter
+ abessifi.osb                                        Install and configure Oracle Service Bus
+ abessifi.sqlplus                                    Install and configure SQLPLUS tool
+ abrararshad.mariadb_import                          Archive and import maraidb database to the remote machine
+ Actifio.ansible_ondemand_backup                     Ansible role for on-demand backup with Actifio.
+ Actifio.appaware_mount                              Ansible role for Actifio AppAware mounts
+ adambrassard.azure_sqldatabase                      Creating Azure SQL managed Database
+ adambrassard.azure_sqlserver                        Creating an Azure SQL PaaS server
+ adshafqat.ansible_role_mysql                        Solution Designer
+ Akman.ocstore_backup                                ocStore Backuper for Linux
+ alban.andrieu.squirrel                              A role for installing squirrel
+ alikins.drupal                                      Deploy or install Drupal on your servers.
+ alphanodes.backup                                   Run daily backups for files, MySQL databases and PostgreSQL databases
+ amarao.flyway                                       Install flyway command line tool from www.flywaydb.org
+ amestsantim.odbc_driver_for_mssql_on_ubuntu         Role to enable usage of SQL Server from PHP on Ubuntu by installing and configuring all required drivers.
+ amtega.horde                                        Setup horde
+ ansibleguy.infra_mariadb                            Role to deploy one or multiple MariaDB instances on a linux server
+ ansible_security.ids_config                         Intrusion Detection System Configuration Role
+ arBmind.ansible-rails                               Out sink-tank for modules and playbooks that help to deploy Ruby on Rails applications
+ artem_sedykh.mssql_security                         Additional modules for managing MSSQL server
+ ashiwa.zabbix-server                                Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ ashokgelal.mysql                                    Installs MySQL or MariaDB
+ azavea.oracle-instantclient                         An Ansible role for installing Oracle Instant Client.
+ bbatsche.MySQL                                      Simple role for installing the default version of MySQL for Ubuntu
+ belgotux.automysqlbackup                            Role to install the up-to-date version of automysqlbackup fork https://github.com/belgotux/automysqlbackup of the not maintained wipe_out's project on sourceforge
+ bertvv.collectd                                     Installs collectd and, optionally, collectd-web on RHEL/CentOS 7
+ bertvv.mariadb                                      Manage MariaDB on a RedHat based Linux distribution.
+ blackstar257.newrelic                               New Relic PHP Agent role / Application monitoring for RHEL/CentOS, Ubuntu, Debian
+ bngsudheer.gcs_proxy                                Install and configure Google Cloud SQL Proxy
+ bngsudheer.redmine                                  Install Redmine on CentOS
+ bodsch.gitea                                        installs, configures gitea
+ bodsch.telegraf                                     ansible role to setup telegraf
+ Boonyah.mysql-import                                Mysql Import from SQL
+ bradtreloar.ansible_role_drupal                     Deploy or install Drupal on your servers.
+ btr1975.linux_nodejs_webserver                      Install NodeJS, and Git on Linux, in either nvm, or a production server
+ bubebyte.dovecot                                    Ansible role to install and configure dovecot on CentOS.
+ bubebyte.postfix                                    Ansible role to install and configure postfix.
+ buluma.redmine                                      Install Redmine on CentOS
+ buluma.sonarqube                                    An Ansible Role that install SonarQube.
+ byingeniance.sphinx_config                          your description
+ cchurch.win_vipre                                   Manage VIPRE Business Antivirus Server on Windows.
+ cdelgehier.XtraDB-Cluster                           Install and configure a Cluster Mysql
+ chadek.nocodb                                       ansible role to install nocodb for linux
+ chriscroome.mariadb                                 Webarchitects Ansible role for installing and configuring MariaDB on Debian servers
+ ChristopherDavenport.universal-oracle-client        Universal Oracle Client Installer
+ chubchubsancho.pi_hole                              An Ansible Role to install Pi-Hole
+ ckstevenson.db_check                                Simple check for MSSQL and Oracle on Windows and Linux for auditing purposes.
+ clouddrove.ansible_role_mysql                       This ansible role install mysql server for Debian.
+ cloudweeb.polemarch                                 Ansible role to install Polemarch
+ cnstechnicalgroup.sqlserver-ag-add-replica          Ansible Role adds an instance as a SQL Server Always-On read only replica to an Always-On Availability Group.
+ cnstechnicalgroup.sqlserver-ag-config               Ansible role install SQL Server High Availability Components and configure hosts for mirror communications
+ cnstechnicalgroup.sqlserver-ha-config               Ansible role install SQL Server High Availability Components and configure hosts for mirror communications
+ cnstechnicalgroup.sqlserver-server                  Ansible role install SQL Server, SQL Server Agent
+ codenamenuke.wordpress                              Install & Configure WordPress with Apache, PHP & MySQL
+ colonelclink.ansible_role_xtradb_cluster            Install and configure a Cluster Mysql
+ conatel_digital_hub.run_awx                         Ansible role to run AWX on top of Docker Compose
+ conatel_digital_hub.run_postgres                    Ansible role to run a PostgreSQL database on top of Docker Compose
+ couchgott.role_mssql                                Installs an MSSQL Server on Windows Server Systems
+ cowops.debian-sphinxsearch                          Install Sphinxsearch for debian system
+ CSCfi.ansible-role-slurm                            Installs and configures slurm on a cluster
+ cyberitas.sqlserver                                 Install SQL Server on RHEL/CentOS
+ CyVerse-Ansible.irods_cfg                           An ansible role for configuring an iRODS server
+ d4gh0s7.postgres_dump                               Ansible role designed to run a full postgresql database dump leveraging the pg_dumpall command.
+ dachinat.ansible_role_mariadb                       Manage MariaDB on a RedHat based Linux distribution.
+ damianlewis.octobercms                              Installs and configures October CMS.
+ darexsu.zabbix_server                               install and configure zabbix server
+ datadog-galaxy.sonarqube                            SonarQube provision role
+ davidalger.cloud_sql_proxy                          Cloud SQL Proxy for Linux.
+ deimosfr.mysql                                      Ansible playbook for MySQL
+ dfgd.oracle-sqlDeveloper                            Ensure that Oracle SQL Developer and SQLCL is installed
+ dimivanchenko.galaxy_deploy_sql_server_role         your role description
+ dj-wasabi.zabbix-server                             Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ dpredhat.ansible_role_mssql                         Microsoft SQL Server 2019 for RHEL 8
+ dresden-weekly.Rails                                Out sink-tank for modules and playbooks that help to deploy Ruby on Rails applications
+ dstanek.devstack                                    A role to install and run devstack
+ ecaepp.ansible_role_misp                            Role for creating and setting up base MISP server
+ ecaepp.ansible_role_mysql                           Basic MySQL install for Ubuntu 16.04.
+ edwarddijk.ansible_role_windows_server              Basic Windows Server configuration
+ emurphy.airflow                                     Ansible role to manage Airflow installation and configuration
+ eNiXHosting.mariadb                                 Ansible role to deploy mariadb SQL Server
+ esoucy19.zabbix_server_deploy                       Ansible role to deploy a fully functioning Zabbix server.
+ fourforbusiness.mysql-prepare-db                    Imports database dumps, executes additional MySQL Scripts and can replace specific text parts in the dumps
+ fourforbusiness.shopware                            Installs a Shopware-Ready environment on the target machine
+ fperreau.ibm_resiliency_orchestration_drm           IBM Resiliency Orchestration Disaster Recover Manager install
+ fradee.ansible_percona                              Ansible playbook to install percona MySQL server
+ fubarhouse.drush                                    Provisions Drush version manager
+ galaxyproject.proftpd                               Install and Configure ProFTPD (optionally, for Galaxy Servers).
+ garutilorenzo.ansible_role_linux_mysql              Install and configure MySQL Server and MySQL InnoDB Cluster
+ geerlingguy.drupal                                  Deploy or install Drupal on your servers.
+ ghobadimhd.dovecot                                  simple ansible role to configure dovecot imap/pop3 server on ubuntu xenial and centos 7
+ ghobadimhd.postfix                                  simple role for configuring postfix mta
+ goldstrike77.ansible_role_linux_minio               your description
+ goldstrike77.ansible_role_linux_mysql               your description
+ goldstrike77.ansible_role_linux_nginx               your description
+ goldstrike77.ansible_role_linux_postgresql          your description
+ GoodMirek.proftpd                                   Install and Configure ProFTPD, including SFTP
+ Grzyboll.proftpd                                    This role installs a Proftpd server with virtual users from a MySQL/MariaDB database instead of real system users (included Quota).
+ guillaumewatteeux.centreon                          Deploy host to Centreon
+ guzmonne.run_postgres                               TDM
+ hackwish.ansible_cloud_sql_proxy                    your role description
+ HauptJ.ansible-role-mariadb-1                       Manage MariaDB on a RedHat based Linux distribution.
+ HauptJ.mariadb                                      Installs MariaDB and either creates or imports a database
+ hosninabil.mariadbserver                            MariaDB initial server configuration
+ hxpro.mysql                                         Install MySQL 5.7 Community Edition
+ hybridadmin.mysql                                   A role to install standalone or clustered mysql/mariadb servers on supported distros
+ iamabhishek_dubey.ansible_role_prometheus_exporters Install and configure Prometheus Exporters
+ idealista.clickhouse                                Clickhouse Role
+ indigo-dc.os-controller                             Openstack controller
+ infOpen.airflow                                     Ansible role to install and configure airflow
+ informatiquecdc.win_sqlserver_ceip                  Enables or disables the Customer Experience Improvement Program (CEIP) for SQL Server.
+ inmotionhosting.wordpress_ultrastack                Modular Ansible Role for deploying and configuring WordPress, including InMotion's optimized UltraStack
+ insspb.postgresql                                   This role will install and configure Postgre SQL server and client.
+ ionut-maxim.win_sqlexpress2014                      Ansible Role to install SQL Server Express 2014
+ iroquoisorg.postgresql                              role for postgresql
+ jacobdotcosta.ansible_galaxy_dhcpd                  Enterprise Asset Management and Service Desk consultant. IaC evangelist.
+ jedimt.wordpress                                    Deploy sample WordPress demo with CSI protected persistent volumes
+ jensneirynck.zabbixserver                           Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ jetune.sonarqube                                    Ansible Role for Sonarqube Installation [Fork From IRK]
+ jonathanfox82.mssql-tools                           Simple role to install MSSQL Tools on Linux Red hat only for now.
+ jorikvandamme.drupal_webserver_ansible              LEPP stack with Drupal frontend (for premade drupal sites)
+ j-tanaka.zabbix-server                              Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ jtyr.gerrit                                         A role that installs Gerrit.
+ jtyr.php                                            Role which installs and configures PHP and PHP extensions.
+ juju4.jira2                                         meta role to setup Jira in a sane and secure environment
+ kdiegorsantos.hadouken                              Collect information about hardware and software from Linux servers and update a sqlite3 database with this informations.
+ kibatic.docker-systemd                              Ansible role to provision docker services using systemd
+ kkolk.mssql                                         Ansible role will install a SQL Server Developer Edition 2017 instance on supported Windows platforms.
+ klewan.ansible_role_oracle                          Oracle Common Role
+ klewan.ansible_role_postgresql                      PostgreSQL Common Role
+ kokolight.win_install_sql                           Automated installation of MSSQL Server
+ kravietz.ipsec                                      Protect host-to-host traffic with IPSec in transport mode
+ kurron.sql-developer                                IDE and tools a SQL developer needs.
+ kyleabenson.mssql                                   Microsoft SQL Server for RHEL 7
+ kyungw00k.airflow                                   Install Airflow using pip
+ l3d.gitea                                           Ansible role to configure and deploy gitea and forgejo, a painless self-hosted Git service.
+ lammensj.drupal                                     Deploy or install Drupal on your servers.
+ laxathom.libertempo                                 Ansible role to install/update and configure libertempo on RHEL/CentOS
+ laxathom.passbolt                                   Ansible role to install and configure passbolt API
+ leafnode.postgresql                                 role for postgresql
+ lean_delivery.oracle_db                             Lean Delivery Oracle Database install
+ lechuckroh.mariadb                                  Manage MariaDB
+ lechuckroh.mysql                                    Manage MySQL
+ lifeofguenter.mssql                                 Installs SQL Server (2017|2019).
+ linux-system-roles.metrics                          Linux system role for metric collection
+ linux-system-roles.postgresql                       Ansible role for managing PostgreSQL
+ LIP-Computing.os-controller                         Openstack controller
+ liviuchircu.ansible_role_xtradb_cluster             Install and configure a Cluster Mysql
+ lokeshgurunath.ansible_my_sql                       Solutions Architect
+ lotusnoir.apps_adminer                              Install and configure sql admin web interface adminer
+ lrk.flyway                                          An Ansible Role that install Flyway Command-line Tool.
+ lrk.prometheus-sql-exporter                         An Ansible Role that install Prometheus SQL Exporter.
+ lrk.sonarqube                                       An Ansible Role that install SonarQube.
+ lukasic.mariadb                                     Ansible MariaDB Role
+ maartenbeeckmans.bitwarden                          Installs self hosted bitwarden password manager
+ mahdi22.asterisk                                    Install Asterisk from source on RedHat/CentOS 7 and RedHat/CentOS 8
+ mahdi22.mariadb_install                             Install and configure Mariadb server on Rhel/CentOS, Debian and Ubuntu ditributions
+ manala.mysql                                        Handle mysql
+ mbaran0v.ansible_role_sql_exporter                  Prometheus SQL Exporter
+ mediapop.mysql-server                               Preconfigured for the web to support emojis and timezones.
+ memiah.mysql-s3-restore                             Amazon S3 to MySQL restore.
+ mesaguy.prometheus                                  install and manage prometheus and prometheus exporters
+ mescanef.zabbix-server                              Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ mgramin.sql_boot_ansible                            Ansible role for sql-boot
+ micczu1.ansible_sql_exporter                        Ansible role for install database agnostic SQL exporter for Prometheus.
+ michaellessard.mssql                                Install Microsoft SQL Server on RHEL 7. Works based on kyleabenson mssql role.
+ miguelenes.zabbix-server                            Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ miimetiq.recovery                                   Ansible role for simplifying backup and restore process of MIIMETIQ.
+ mjanser.kodi                                        Installs kodi on Fedora
+ mjanser.mysql                                       Installs MySQL or MariaDB
+ mjanser.mythtv                                      Installs MythTV on Fedora
+ mjanser.owncloud                                    Installs nextCloud or ownCloud on Fedora
+ mrlesmithjr.ansible_mssql                           Ansible role to install MS SQL
+ mycloudrevolution.veeam_setup                       This Role runs the unattended setup of Veeam Backup & Replication v11 and Veeam ONE v11
+ natefoo.postgresql_objects                          Configure PostgreSQL objects: users (roles), databases, and privileges
+ neoloc.gitea                                        Ansible role to configure and deploy gitea, a painless self-hosted Git service.
+ net2grid.mysql-deploy                               MySQL server data import.
+ netzwirt.mysql-server                               Install mysql-server on Ubuntu/Debian with random root password (will be written to /root/.my.cnf)
+ newrelic.newrelic_install                           Role for New Relic's Targeted Installs
+ newrelic.newrelic_java_agent                        Role to install New Relic APM Java agent
+ niainalens.cloud_sql_proxy                          Cloud SQL Proxy for Linux.
+ niceshopsorg.mssql_linux                            Ansible-Role and Notes to run MSSQL on Linux
+ nicolai86.rails-deployment                          deploys rails application like capistrano or mina do
+ NLCR.mariadb                                        your description
+ Norkart.mssql-server                                SQL server for Centos/RedHat
+ nuclon.sql_exporter                                 Deploy sql_exporter
+ oasis_roles.jbosseap                                Install and configure Red Hat JBoss EAP
+ Oefenweb.mariadb-server                             Set up mariadb-server server in Debian-like systems
+ Oefenweb.percona_server                             Set up percona-server server in Debian-like systems
+ Oefenweb.rsync_sync                                 Perform synchronization using rsync
+ onaio.sqitch_migrations                             Simple role to run database migrations using sqitch
+ onelove-roles.freebsd_freenit_sql                   Freenit in FreeBSD bhyve/jail
+ opstree_devops.prometheus_exporters                 Install and configure Prometheus Exporters
+ organicveggie.postgres_docker                       Role to install PostgreSQL Docker container on Linux.
+ oscbco.restore_database                             Role for restoring data of a postgresql database
+ o_sole_meo.ansible_ipsec                            Protect host-to-host traffic with IPSec in transport mode
+ outsideopen.mssql_global_backup                     Creates mssql backup job
+ papanito.ttrss                                      Role for simplified git repo handling
+ paprikant.beacon                                    beacon-python with postgres database
+ paulmaunders.restore-sqldump-from-s3                An ansible role to restore sql dumps from S3 into MySQL
+ peschmae.postgresql_backup                          Postgres backups on linux
+ picotrading.ansible-grafana                         Role to install and configure Grafana
+ piuma.mariadb                                       Manage MariaDB on a RedHat based Linux distribution.
+ plcnk.centreon                                      An Ansible role to install Centreon (Central server) on a virtual machine.
+ plumelo.mysql                                       Ansible role to install MySQL
+ PoplarYang.grafana                                  Role to install and configure Grafana
+ radamanth.joomla-ansible                            A small ansible role for installing joomla on an ubuntu server
+ rajaniesh.ansible_role_mysqldb                      Solution Architect
+ ramiferwana.sql_express_with_console                This ansible role to install SQL Express and Management Studio Console on Windows OS.
+ redhat_sap.sap_hana_cockpit_deployment              Deploy SAP HANA Cockpit
+ renaud82.wordpress_role                             Ansible wordpress role
+ renkeju.ansible_role_xtradb_cluster                 Install and configure a Cluster Mysql
+ respheal.wordpress_ultrastack                       Modular Ansible Role for deploying and configuring WordPress, including InMotion's optimized UltraStack
+ ROCK5GmbH.mailserver                                This role installs a mailserver with Postfix, Dovecot, Spamassassin, Amavis, ClamAV and a database backend.
+ ROCK5GmbH.milter                                    This role installs Amavis, ClamAV, OpenDKIM and Spamassassin
+ ROCK5GmbH.postfix                                   This role installs Postfix
+ rogue357.iiq_db                                     Deploys an instance of MySQL to be used for IdentityIQ sandbox development
+ rogue357.iiq_db_remove                              Removes a docker instance of MySQL
+ roumano.postfix_dovecot                             automates the installation and configuration of Postfix and Dovecot
+ rsanzante.nginx-server-block                        This role configures a single site using server blocks (virtual hosts using Apache jargon).
+ rwunderer.percona_server                            Set up percona-server server in Debian-like systems
+ SANBI-SA.postgresql-objects                         Configure PostgreSQL objects: users (roles), databases, and privileges
+ sanoousmane.namedmanager-dns                        An ansible role to setup and configure Namedmanager under CentOS 7
+ sidmanish.ansible_role_mysql                        Devops Engineer
+ softasap.sa-postgres                                Installs postgresql, app user, optionally patches listen address and trusted networks.
+ softasap.sa_prometheus_exporters                    helper role that allows to install set of predefined prometheus exporters
+ softasap.sa-sql-server                              microsoft sql server on ubuntu
+ sorrowless.postfix                                  Ansible role to install Postfix and Postfixadmin
+ sparknsh.mariadb                                    Install and Configure MariaDB MySQL Server
+ StackFocus.postfix-dovecot                          automates the installation and configuration of Postfix and Dovecot with SQL authentication
+ stevenharradine.owncloud                            Installs and configure owncloud
+ stuvusIT.mattermost                                 Mattermost
+ stuvusIT.roundcube                                  roundcube instance
+ stuvusIT.wordpress                                  Wordpress ansible role
+ sundeepk1.prometheus                                install and manage prometheus and prometheus exporters
+ superset1.iperf3                                    Checking the availability of hosts from the MySQL list and testing them with the iperf3 utility
+ supertarto.burpui                                   Install and configure BurpUI with Ansible
+ Synehan.kodi                                        Kodi installation and configuration
+ sysco-middleware.oracle-database-sql                generate and execute oracle database sql scripts
+ sys_fs.mysql                                        Install and configure MySQL on Debian and Ubuntu.
+ talluru37.ansible_role_mysql                        install mysql database
+ tekniqueltd.cfssl-docker                            CFSSL API server
+ thestarkster.mariadb_install                        Install and configure Mariadb server on Rhel/CentOS, Debian and Ubuntu ditributions
+ timorunge.proxysql                                  This role installs and configures ProxySQL - the high performance, high availability, protocol aware proxy for MySQL.
+ tiru_patel.wordpress_sql                            your role description
+ tobias_richter.librenms                             Ansible Role for setting up and managing librenms.
+ torian.newrelic                                     Ansible role for NewRelic
+ trombik.cfssl                                       ansible role for cfssl
+ trombik.zabbix_server                               Configures zabbix-server
+ tschifftner.roundcube                               Installs and configures roundcube on Debian/Ubuntu linux servers.
+ tschoonj.ansible_role_guacamole_exporter            Role for installing guacamole_exporter, which provides Guacamole usage metrics for Prometheus
+ udelarinterior.ansible_zabbix_server                Installing and maintaining zabbix-server for RedHat/Debian/Ubuntu.
+ udelarinterior.backuppc_client                      Install and manage BackupPC Client
+ umeshravi0595.my_sql                                Ansible role to deploy MySQL database server.
+ uoi-io.galera                                       Deploy a Galera 3 cluster with MariaDB 10.1, supports SELinux, firewalld, Pacemaker
+ vbotka.freebsd_mailserver_roundcube                 FreeBSD. Install and configure Roundcube webmail.
+ vdzhorov.ansible_role_mariadb                       Install and configuring MariaDB
+ vdzhorov.proxysql                                   This role is a fork from timorunge.proxysql.  The role installs and configures ProxySQL - the high performance, high availability, protocol aware proxy for MySQL.
+ vdzhorov.xtradb_cluster                             Install and configure a XtraDB Cluster
+ viasite-ansible.drupal                              Deploy or install Drupal on your servers.
+ viasite-ansible.site                                Install site to server, in place of https://github.com/viasite/site-setup
+ voycey.cakephp-ansible                              Deploy LEMP (PHP 7) on Ubuntu 16.04
+ wiredobjects.mariadb                                Ansible role for managing a MariaDB sql server
+ Xobb.percona                                        Ansible playbook to install percona MySQL server
+ yanosliger_dev.datadog_sphinxsearch                 Adds sphinxsearch metrics from status
+ ypid.linuxmuster_net_client                         Configure a linuxmuster.net client
+ ypid.linuxmuster_net-server-customize               Apply common customizations to a linuxmuster.net server.
+ ZandaGo.zabbix-server                               Installing and maintaining zabbix-server for RedHat.
