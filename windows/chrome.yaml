@@ -1,7 +1,7 @@
 # install google chrome on windows
 ---
 - name: "chocolatey"
-  hosts: winserver
+  hosts: all
   tasks:
     - name: install google chrome
       win_chocolatey:
