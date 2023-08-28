@@ -2,9 +2,9 @@
 - name: Ensure SQL Server Express is installed
   win_chocolatey:
     name: sql-server-express
-    state: absent
+    state: present
 
 - name: Ensure SQL Server Management Studio is Installed
   win_chocolatey:
     name: sql-server-management-studio
-    state: absent
+    state: present
