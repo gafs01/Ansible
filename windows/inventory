@@ -6,7 +6,7 @@ answn
 answin10
 
 [dbservers]
-#answin
+answin
 
 # nested group
 [win:children]
