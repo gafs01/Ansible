@@ -11,3 +11,4 @@
     name: openjdk-6-jdk
     state: latest
     install_recommends: no
+when: "'{{ ansible_distribution }}'"a == "Ubuntu"
