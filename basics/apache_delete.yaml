@@ -1,1 +1,8 @@
-
+---
+- hosts: ansubuntu
+  become: true
+  tasks:
+    - name: remove apache httpd
+      ansible.builtin.apt:
+        name: apache2 
+        state: absent    
