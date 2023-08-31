@@ -1,6 +1,5 @@
 ## Show or display the present os family
 - name: Simple Play
-  become: true
   hosts: all
   connection: local
   tasks:
