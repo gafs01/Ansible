@@ -1,0 +1,17 @@
+---
+- hosts. install chronyd
+  yum:
+    name: chrony
+    statte: latest
+    update_cache: yes
+- name: deploy chrony.conf template
+  template:
+    src: /home/chrony.conf.j2
+    dest: /etc/chrony.conf
+    owner: root
+    group: root
+    mode: 0644
+- name: Restart chronyd
+  service:
+    name: chronyd
+    state: restarted
