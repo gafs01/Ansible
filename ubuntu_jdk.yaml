@@ -1,11 +1,11 @@
 ## apt package on ubuntu servers 
 ---
-- name: Install latest version of "openjdk-6-jdk" ignoring "install-recommends"
+- name: Install latest version of "openjdk-17-jdk" ignoring "install-recommends"
   hosts: ubuntu
   become: true
   tasks:
-    - name: install openjdk-6jdk
+    - name: Ansible install openjdk-17-jdk
       ansible.builtin.apt:
-        name: openjdk-6-jdk
+        name: openjdk-17-jdk
         state: latest
         install_recommends: no
