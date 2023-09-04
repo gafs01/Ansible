@@ -1,13 +1,13 @@
 # install lamp on ubuntu server or setup a lamp server
 ---
 - name: Ansible lamp server
-  hosts: ansubuntu-02
+  hosts: lampstack
   become: true
   tasks:
     - name: install multiple packages - Lamp
       register: updatesys
       apt:
-        update_cache: false
+        update_cache: true
         name:
           - firewalld
           - apache2
