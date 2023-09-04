@@ -4,7 +4,7 @@
   hosts: ansubuntu-02
   become: true
   tasks:
-    - name: install multiple packes - Lamp
+    - name: install multiple packages - Lamp
       register: updatesys
       apt:
         update_cache: yes
