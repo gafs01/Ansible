@@ -1,0 +1,18 @@
+# install lamp on ubuntu server or setup a lamp server
+---
+- name: Ansible lamp server
+  hosts: ansubuntu-02
+  become: true
+  tasks:
+    - name: install multiple packes - Lamp
+      register: updatesys
+      apt:
+        update_cache: yes
+        name:
+          - firewalld
+          - apache2
+          - mariadb-server
+          - php
+          - php-mysql
+        state: present   
+    
