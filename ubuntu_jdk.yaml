@@ -1,4 +1,4 @@
-## apt package on ubuntu server 
+## apt package on ubuntu servers 
 ---
 - name: Install latest version of "openjdk-6-jdk" ignoring "install-recommends"
   hosts: ubuntu
