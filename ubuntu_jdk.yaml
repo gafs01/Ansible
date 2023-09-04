@@ -4,7 +4,8 @@
   hosts: ubuntu
   become: true
   tasks:
-    ansible.builtin.apt:
-    name: openjdk-6-jdk
-    state: latest
-    install_recommends: no
+    - name: install openjdk-6jdk
+      ansible.builtin.apt:
+        name: openjdk-6-jdk
+        state: latest
+        install_recommends: no
