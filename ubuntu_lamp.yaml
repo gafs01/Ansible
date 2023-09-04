@@ -7,7 +7,7 @@
     - name: install multiple packages - Lamp
       register: updatesys
       apt:
-        update_cache: true
+        update_cache: false
         name:
           - firewalld
           - apache2
