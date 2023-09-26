@@ -1,10 +1,11 @@
+---
 - name: install start and enable httpd
-  hosts: all
+  hosts: ansubuntu
   tasks:
-  - name: install package
-      package:
+  - name: install apache
+    package:
       name: httpd
-      state: latest
+      state: present
   - name: start and enable service
     service:
       name: httpd
