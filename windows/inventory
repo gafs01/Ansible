@@ -3,18 +3,33 @@ answin
 answin02
 answn
 
+<<<<<<< HEAD
+=======
+#[webservers]
+#answin
+#answin02
+
+>>>>>>> 57898875972172af3ae94c8da5fd10d6f7aa59e3
 [windesk]
 answin10
 
 [dbservers]
 answin
 
+<<<<<<< HEAD
+[webservers]
+answin
+answin02
+
+nested group
+=======
 # nested group
+>>>>>>> fa12703eed9dba3d98dd227457ad4c6fc9fd400f
 [win:children]
 winserver
 windesk
 
-[win:vars]
+[winserver:vars]
 ansible_user=ansible
 ansible_password=Passw0rd!
 ansible_connection=winrm

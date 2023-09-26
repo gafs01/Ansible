@@ -1,7 +1,8 @@
-- name: create_user_ansible
-      user:
-        name: ansadm
-        state: present
-        shell: /bin/bash
-        password: " {{ 'Passw0rd!' | paswword_hash( 'sha512' ) }}"
-        update_password: on_create
+---
+- name: create_user_ansible 
+  user:
+    name: ansadm
+    state: present
+    shell: /bin/bash
+    password: " {{ 'Passw0rd!' | password_hash( 'sha512' ) }}"
+    update_password: on_create

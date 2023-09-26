@@ -1,5 +1,9 @@
 - name: install apache on ubuntu
-  hosts: ansubuntu
+<<<<<<< HEAD
+  hosts: ansubuntu-02
+=======
+  hosts: ubuntu
+>>>>>>> fa12703eed9dba3d98dd227457ad4c6fc9fd400f
   become: true
   tasks:
     - name: Install latest version of Apache

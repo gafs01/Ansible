@@ -2,7 +2,11 @@
 - name: install start and enable httpd
   hosts: ansubuntu
   tasks:
+<<<<<<< HEAD
   - name: install apache
+=======
+  - name: install package
+>>>>>>> 57898875972172af3ae94c8da5fd10d6f7aa59e3
     package:
       name: httpd
       state: present

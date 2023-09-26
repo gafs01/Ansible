@@ -1,6 +1,7 @@
 ## Show or display the present os family
 - name: Simple Play
   hosts: all
+  become: true
   connection: local
   tasks:
     - name: ping me
