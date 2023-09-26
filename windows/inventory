@@ -1,5 +1,4 @@
 [winserver]
-#answin10
 answin
 answn
 answin02
@@ -14,12 +13,16 @@ answin10
 answn.gaf.local
 answin
 
+[webservers]
+answin
+answin02
+
 nested group
 [win:children]
 winserver
 windesk
 
-[win:vars]
+[winserver:vars]
 ansible_user=ansible
 ansible_password=Passw0rd!
 ansible_connection=winrm

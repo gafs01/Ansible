@@ -1,0 +1,11 @@
+## apt package on ubuntu servers 
+---
+- name: Install latest version of openjdk-17-jdk
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: Ansible install open-jdk-17
+      ansible.builtin.apt:
+        name: openjdk-17-jdk
+        state: latest
+        install_recommends: no

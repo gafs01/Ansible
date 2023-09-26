@@ -1,6 +1,6 @@
 ---
 - name: create user
-  hosts: ansible2
+  hosts: all
   tasks:
   - user:
       name: "{{ username }}"
