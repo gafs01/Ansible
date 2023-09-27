@@ -1,9 +1,14 @@
-- name: install chocolatey .NET Framework 4.8
-  hosts: winserver
+---
+- name: gather_facts from chocolatey
+  hosts: win
   become: false
   gather_facts: false
-  win_chocolatey:
-    name: 'netfx-4.8'
-    state: present
+  tasks:
+    - name: Gather facts from chocolatey
+      win_chocolatey_facts:
+
+    - name: Displays the Configuration
+      debug:
+        var: ansible_chocolatey.config
    
 
