@@ -1,5 +1,6 @@
 ---
 - name: checking the fact cache
+  become: true
   hosts: all
   gather_facts: False
   tasks:
