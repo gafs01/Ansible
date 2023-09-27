@@ -1,0 +1,9 @@
+- name: install chocolatey .NET Framework 4.8
+  hosts: winserver
+  become: false
+  gather_facts: false
+  win_chocolatey:
+    name: 'netfx-4.8'
+    state: present
+   
+

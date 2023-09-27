@@ -1,0 +1,18 @@
+---
+- name: Install default apps
+  hosts: win
+  gather_facts: false
+  tasks:
+#Upgrade all installed packages
+  - name: Upgrade installed packages
+    win_chocolatey:
+      name: all
+      state: latest
+  - name: install git
+    win_chocolatey:
+      name: git
+      state: present
+  - name: install Microsoft .NET Framework 4.8
+    win_chocolatey:
+      name: 'netfx-4.8'
+      state: present    

@@ -1,7 +1,7 @@
 # install multiple packages
 ---
 - name: Win_chocolatey module demos
-  hosts: winserver
+  hosts: all
   become: false
   gather_facts: false
  # - name: Install multiple packages sequentially
@@ -12,8 +12,8 @@
   #- git
   #- putty
   #- notepadplusplus
-   - google chrome
-  
+   - googlechrome
+   - procexp
  # vars:
    # - packages:
     #  - git
