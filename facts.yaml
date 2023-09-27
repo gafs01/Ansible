@@ -1,4 +1,4 @@
-# Collect only facts returned by facter.
+## Collect only facts returned by facter.
 # ansible all -m ansible.builtin.setup -a 'gather_subset=!all,facter'
 
 - name: Collect only facts returned by facter
