@@ -1,0 +1,20 @@
+---
+- hosts: answin
+  tasks:
+         - name: gather information about service spooler (win_service)
+           win_service:
+              name: spooler
+           register: service_spooler_1
+
+         - name: gather information about service spooler (win_service_info)
+           win_service:
+              name: spooler
+           register: service_spooler_2
+
+         - name: print return (win_service)
+           debug: 
+              msg: "{{ service_spooler_1.state }}"
+
+         #- name: print return (win_service_info)
+          # debug:  
+           #   msg: "{{ service_spooler_2.services[0].state  }}"   

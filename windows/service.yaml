@@ -1,0 +1,25 @@
+---
+- hosts: dbservers
+  tasks:
+
+         - name: Get info for all installed services
+           win_service:
+              name: WinRM
+           register: service_info
+         - name: Get info for a service using its display name
+           win_service:
+              name: Windows Remote Management (WS-Management)
+
+         - name: Find all services that start with 'win'
+           win_service:
+              name: win*
+         
+         - name: Check Service Status
+           win_service:
+              name: WinRM
+           register: service_info
+         - name: Start Service
+           win_service:
+              name: spooler
+              state: started
+           register: service_info   
