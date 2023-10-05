@@ -1,16 +1,28 @@
 ## Collect only facts returned by facter.
 # ansible all -m ansible.builtin.setup -a 'gather_subset=!all,facter'
+---
+- hosts: ubuntu 
+  gather_facts: false
+  become: true
+  tasks:
+      - name: Collect only facts returned by facter
+        ansible.builtin.setup:
+          gather_subset:
+            - '!all'
+            - '!<any valid subset>'
+            - facter
 
-- name: Collect only facts returned by facter
-  ansible.builtin.setup:
-    gather_subset:
-      - '!all'
-      - '!<any valid subset>'
-      - facter
+      - name: Filter and return only selected facts
+        ansible.builtin.setup:
+          filter:
+            - 'ansible_distribution'
+            - 'ansible_machine_id'
+            - 'ansible_*_mb'
 
-- name: Filter and return only selected facts
-  ansible.builtin.setup:
-    filter:
-      - 'ansible_distribution'
-      - 'ansible_machine_id'
-      - 'ansible_*_mb'
+      #- hosts: dbservers
+       # tasks:
+        #    - name: Gather facts from db servers
+         #     ansible.builtin.setup:
+          #    delegate_to: "{{ item }}"
+           #   delegate_facts: true
+            #  loop: "{{ groups['dbservers'] }}"
