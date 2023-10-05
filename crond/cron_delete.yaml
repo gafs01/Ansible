@@ -1,0 +1,17 @@
+Deleting the crontab job and App_home environment 
+---
+- hosts: ubuntu
+  gather_facts: false
+  become: true
+  tasks:
+      - name: Removes a cron file from under /etc/cron.d
+        ansible.builtin.cron:
+          name: "yum autoupdate"
+          cron_file: ansible_yum-autoupdate
+          state: absent
+
+      - name: Removes "APP_HOME" environment variable from crontab
+        ansible.builtin.cron:
+          name: APP_HOME
+          env: yes
+          state: absent    
