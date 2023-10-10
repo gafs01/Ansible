@@ -1,19 +1,19 @@
 ---
 - name: Install all updates and reboot as many times as needed
-  hosts: all
+  hosts: answn
   become: false
   gather_facts: false
   tasks:
     - name: Install all critical and updates
-      ansible.windows.win_updates:
+      win_updates:
         category_names:
-        - SecurityUpdates
-        accept_list:
-        - KB2267602
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
 
         state: installed  
         reboot: yes
-        #reboot_timeout: 3600
+        reboot_timeout: 3600
         log_path: C:\ansible.txt
 
 

@@ -5,11 +5,28 @@ answin02
 answn
 #192.168.157.132
 #192.168.157.130
+
+[dbservers]
+#answn.gaf.local
+answin
+
+
 [win:vars]
 ansible_user=ansible
 ansible_password=Passw0rd!
 ansible_connection=winrm
+ansible_winrm_scheme=http
+ansible_winrm_scheme=https
 #ansible_port:5986
 #ansible_winrm_transport:credssp or basic
 ansible_winrm_transport=basic
 ansible_winrm_server_cert_validation=ignore
+
+
+
+#nested group
+#[win:children]
+#winserver
+#windesk
+
+

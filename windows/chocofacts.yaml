@@ -12,3 +12,13 @@
         var: ansible_chocolatey.config
    
 
+    - name: Displays the Feature
+      debug:
+        var: ansible_chocolatey.feature
+    - name: Gather all facts from chocolatey, except outdated packages
+      win_chocolatey_facts:
+        filter:
+          - 'config'
+          - 'feature'
+          - 'packages'
+          - 'sources'    

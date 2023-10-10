@@ -1,13 +1,12 @@
 ---
 - name: Install Windows Updates
-  hosts: all
+  hosts: answn
   gather_facts: false
+  become_method: runas
   tasks:
     - name: Install all security updates 
       win_updates:
-        category_names:
-        - SecurityUpdates
-        reboot: yes
+        reboot: false
         reboot_timeout: 3600
 
 

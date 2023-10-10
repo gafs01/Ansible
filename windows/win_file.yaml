@@ -1,0 +1,35 @@
+---
+- hosts: win
+  gather_facts: false
+  become: false
+  tasks:
+      - name: Change file ownership, group and permissions
+        ansible.builtin.file:
+          path: /etc/foo.conf
+          owner: foo
+          group: foo
+          mode: '0644'
+
+      - name: Give insecure permissions to an existing file
+        ansible.builtin.file:
+          path: /work
+          owner: root
+          group: root
+          mode: '1777'
+
+      - name: Create a symbolic link
+        ansible.builtin.file:
+          src: /file/to/link/to
+          dest: /path/to/symlink
+          owner: foo
+          group: foo
+          state: link
+
+      - name: Create two hard links
+        ansible.builtin.file:
+          src: '/tmp/{{ item.src }}'
+          dest: '{{ item.dest }}'
+          state: hard
+        loop:
+          - { src: x, dest: y }
+          - { src: z, dest: k }

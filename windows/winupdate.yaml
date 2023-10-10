@@ -1,0 +1,16 @@
+---
+- name: Install windows updates
+  hosts: answin
+  gather_facts: false
+  become: false
+  tasks:
+      - name: install updates
+        win_updates:
+          category_names: '*'
+          reboot: false
+
+      #- name: Search-only, return list of found updates (if any), log to C:\ansible_wu.txt
+       # win_updates:
+        #  category_names: SecurityUpdates
+         # state: searched
+          #log_path: C:\ansible_wu.txt
