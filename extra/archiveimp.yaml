@@ -1,0 +1,8 @@
+# Difference between import_tasks and include_tasks by excluding the statement in include tasks
+- name: 'Backup and Schedule backups'
+  hosts: 'all'
+  become: true
+  gather_facts: true
+  tasks:
+  - import_tasks: backup.yaml
+  #- include_tasks: schedule.yaml 

@@ -1,11 +1,7 @@
 [ubuntu]
-kubuntu
+#kubuntu
 ansubuntu
 ansubuntu-02
-<<<<<<< HEAD
-=======
-
->>>>>>> fa12703eed9dba3d98dd227457ad4c6fc9fd400f
 
 [rocky]
 ansible2

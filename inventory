@@ -1,10 +1,11 @@
-<<<<<<< HEAD
 anscontrol 
-ansubuntu
-ansubuntu-02
+#ansubuntu
+#ansubuntu-02
 kubuntu
 answin
-=======
+#ansible2
+#ansible3
+
 [ubuntu]
 ansubuntu
 ansubuntu-02
@@ -12,7 +13,6 @@ kubuntu
 
 [Lampstack]
 ansubuntu-02
->>>>>>> 0b2c934bf9fa9fe7c0909523f4deb780dd20e873
 
 [rocky]
 ansible2

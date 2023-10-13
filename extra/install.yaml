@@ -3,4 +3,4 @@
     name:
       - vdo
       - kmod-kvdo
-    state: latest  
+    state: present  

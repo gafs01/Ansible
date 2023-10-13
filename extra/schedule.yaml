@@ -1,5 +1,6 @@
+# Scheduling backup Using Cron and include in the play
 ---
-- name: 'Schedule backupof /etc'
+- name: 'Schedule backup of /etc'
   ansible.builtin.cron:
     name: 'backup /etc'
     weekday: '5'

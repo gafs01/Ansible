@@ -1,23 +1,20 @@
-- name: 'Manage Apache Webserver Deployment'
-  hosts: all
+- name: 'Manage Apache Deployment'
+  hosts: ansible2
   become: true
   gather_facts: false
   tasks:
-    - name: 'Install Apache Webserver'
-      package:
-         name: " {{ apache_pkg }}"
-         state: 'present'
-    - name: 'Ensure web server is running and enabled'
-      service:
-        name: " {{  apache_srv  }}"
-        state: 'started'
-        enabled: true
-    - name: 'Copy web content'
-      copy:
-        dest: '/var/www/html/'
-        src: 'web/'
-       # state: 'file'
-        #content: |
-         # This is a simple web page
-          #<h1>Welcome to gafsad</h1>
+      - name: 'Install Apache Web Server'
+        package:
+           name: 'httpd'
+           state: 'present'
+
+      - name: 'Ensure web server is running and enabled'
+        service:
+          name: 'httpd'
+          state: 'started'
+          enabled: true
+      - name: 'Copy web content'
+        copy:
+          dest: '/var/www/html/'
+          src: 'web/'
 

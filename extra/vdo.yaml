@@ -1,13 +1,13 @@
 # All the create task will be included in the task
 - name: vdo
-  hosts: rocky
+  hosts: rocky 
   become: true
   gather_facts: false
   tasks:
-  - include_tasks: install.yaml
-  - include_tasks: service.yaml
-  - include_tasks: createvdo.yaml
-  - include_tasks: fs.yaml
-  - include_tasks: mountpoint.yaml 
-  - include_tasks: mount.yaml
+    - include_tasks: install.yaml
+    - include_tasks: service.yaml
+    - include_tasks: createvdo.yaml
+    - include_tasks: fs.yaml
+    - include_tasks: mountpoint.yaml 
+    - include_tasks: mount.yaml
 

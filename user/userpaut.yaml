@@ -1,0 +1,14 @@
+# use to authenticate user and the password value must encrypted via password_hash
+---
+- name: 'Manage User Account'
+  hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Manage User'
+      user:
+        state: 'present'
+        shell: '/bin/bash'
+        password: " {{ 'Passw0rd!' | password_hash('sha512') }}"
+        update_password: on_create
+      when: user_create == 'yes'  

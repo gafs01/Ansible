@@ -1,4 +1,4 @@
-# All the tasks are put into blocks via yaml in managing users with when  variables
+# All the tasks are put into blocks via yaml in managing users with when  variables and ssh without paasword requierement
 #
 - name: 'Manage Local Account'
   hosts: 'anscontrol'

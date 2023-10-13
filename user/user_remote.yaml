@@ -1,0 +1,13 @@
+# To create a remote user and authenticate via sshkeys which replaces the need for ssh-copy-id to each remote 
+---
+- name: 'Create a remote User'
+  hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Allow SSH Authentication to Remote Account'
+      authorized_key:
+        user: "{{ user_account }}"
+        state: 'present'
+        manage_dir: true
+        key: "{{ lookup('file','/home/ansible/.ssh/id_rsa.pub') }}"
